@@ -1,0 +1,52 @@
+.goods__item{
+	margin-bottom: 10px;
+
+	&:hover .goods__info,
+	&:focus .goods__info{
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2)
+	}
+
+	&:active .goods__info{
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2)
+	}
+}
+
+.goods__info{
+	border: 1px solid #ececec;
+
+	
+}
+
+.goods__name{
+	font-size: 17px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.goods__description{
+	font-size: 13px;
+	line-height: 30px;
+	color: #444;
+}
+
+.goods__price{
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 700;
+	border-top: 1px solid #ececec;
+	fill: rgba(0,0,0,0.2);
+
+	&:hover,
+	&:focus{
+		fill:#6dd4bf;
+		color: rgba(0,0,0,0.6);
+	}
+
+	&:active{
+		color: rgba(0,0,0,0.3);
+		fill:rgba(109, 212, 191, 0.3);
+	}
+
+
+
+}

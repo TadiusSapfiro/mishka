@@ -1,0 +1,57 @@
+.assortment{
+	
+	font-size: 15px;
+	line-height: 24px;
+	font-weight: 700;	
+	color: #fff;
+}
+
+.assortment__item{
+
+	&--stuff{
+		background-color: #63d1bb;
+	}
+
+	&--toy{
+		background-color: #56c3b2;
+	}
+}
+
+.assortment__link{
+
+	&--stuff{
+
+		&:active&{
+			opacity: 0.3;
+		}
+
+		&:after{
+			content: "";
+			background-image: url(../../images/SVG/icon-interior.svg);
+			display: inline-block;
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 40px;
+			height: 62px;
+			opacity: 0.5;
+		}
+	}
+
+	&--toy{
+
+		&:active&{
+			opacity: 0.3;
+		}
+
+		&:after{
+			content: "";
+			background-image: url(../../images/SVG/icon-toy.svg);
+			display: inline-block;
+			background-repeat: no-repeat;
+			background-position: center;
+			width: 60px;
+			height: 60px;
+			opacity: 0.5;
+		}
+	}
+}

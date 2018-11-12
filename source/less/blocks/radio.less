@@ -1,0 +1,43 @@
+.radio__label{
+	position: relative;
+	cursor: pointer;
+
+	&:before{
+		content: "";
+		position: relative;
+		display: inline-block;
+		width: 51px;
+		height: 51px;
+		border: 2px solid #444;
+		border-radius: 50%;
+		background-color: #fff;
+	}
+
+	&:after{
+		content: "";
+		position: absolute;
+		left: 15px;
+		top:-20px;
+		display: none;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: #62d1ba;
+	}
+
+	&:hover:before{
+		border-color: #62d1ba;
+	}
+
+	&:active:before{
+		border-color: #c7c7c7;;
+	}
+}
+
+.radio__control{
+	
+	&:checked + .radio__label:after{
+		display: inline-block;
+
+	}
+}

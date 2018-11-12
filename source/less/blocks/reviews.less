@@ -1,0 +1,79 @@
+.reviews{
+
+	&:after{
+		content: "";
+		display: block;
+		height: 12px;
+		width:100%;
+		background-image: url(../../images/SVG/bg-zigzag-line.svg);
+		background-repeat: repeat-x;
+	}
+}
+
+.reviews__title{
+	font-size: 25px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.reviews__text{
+	font-size: 15px;
+	line-height: 30px;
+	color: #444;
+}
+
+.reviews__autor{
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.reviews-insta{
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.reviews__back-btn{
+	border: 1px solid #ececec;
+	width: 130px;
+	height: 52px;
+	font-size: 0px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../../images/SVG/icon-left-arrow.svg);
+	outline: none;
+	cursor: pointer;
+
+	&:hover,
+	&:focus{
+		opacity: 0.6;
+	}
+
+	&:active{
+		opacity: 0.3;
+	}
+}
+
+.reviews__next-btn{
+	border: 1px solid #ececec;
+	width: 130px;
+	height: 52px;
+	font-size: 0px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../../images/SVG/icon-left-arrow.svg);
+	transform: rotate(180deg);
+	outline: none;
+	cursor: pointer;
+
+	&:hover,
+	&:focus{
+		opacity: 0.6;
+	}
+
+	&:active{
+		opacity: 0.3;
+	}
+}
