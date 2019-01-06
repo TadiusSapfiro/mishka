@@ -1,23 +1,33 @@
 .process{
-	border: 1px solid #ececec;
+	background-color: #fff;
+	padding: 0 30px 60px 30px;
 
-	&:hover .goods__info,
-	&:focus .goods__info{
+	&:hover,
+	&:focus{
 	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2)
 	}
 
-	&:active .goods__info{
+	&:active{
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2)
 	}
 }
 
 .process__title{
+	position: relative;
+	margin: 0;
+	padding: 25px 0px 25px 90px;
+	border: 1px solid #ececec;
+	border-bottom: none;
 	font-size: 17px;
 	line-height: 24px;
 	font-weight: 700;
 
 	&:before{
+		position: absolute;
+		top:25px;
+		left: 30px;
 		content:url(../../images/SVG/icon-video.svg);
+
 	}
 }
 
@@ -25,30 +35,118 @@
 	position: relative;
 	width: 260px;
 	height: 150px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url(../../images/video-mobile.jpg);
+	cursor: pointer;
+	
+	
+	&:after{
+		content: url(../../images/SVG/icon-play.svg);
+		position: absolute;
+		top: 50%;
+		bottom: 50%;
+		left: 50%;
+		right: 50%; 
+
+		&:hover,
+		&:focus{
+			transform: scale(1.2);
+			opacity: 0;
+		}
+	}
 
 	&:hover &:after,
 	&:focus &:after{
-	transform: scale(1.2);
+		transform: scale(1.2);
+		opacity: 0;
 	}
 
 	&:active &:after{
-	transform: scale(0.8);
-	opacity: 0.3;
+		transform: scale(0.8);
+		opacity: 0.3;
 	}
+}
+
+.process__wrapper{
+	border: 1px solid #ececec;
+	border-top: none;
+	padding: 30px;
+}
+
+.process__description{
 	
-	&:after{
-	content: "";
-	position: absolute;
-	display: block;
-	width: 101px;
-	height: 76px;
-	top: 50%;
-	bottom: 50%;
-	left: 50%;
-	right: 50%;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-image: url(../../images/SVG/icon-play.svg);
-	
+	margin: 0;
+	padding-bottom: 30px;
+	font-size: 13px;
+	line-height: 24px;
+	color: #444;
+}
+
+.process__order-btn{
+	padding: 13px 0;
+}
+
+@media (min-width:@tablet)  {
+	.process{
+		display: flex;
+		flex-direction: column;
+		padding: 0 50px 65px 50px;
+	}
+
+	.process__title{
+		order: 2;
+		font-size: 20px;
+		line-height: 24px;
+		}
+
+	.process__video{
+		order: 1;
+		width: 668px;
+		height: 455px;
+		background-image: url(../../images/video-tablet.jpg);
+	}
+
+	.process__wrapper{
+		order: 3;
+		padding: 0 42px 45px 42px;
+		font-size: 15px;
+		line-height: 30px;
+	}
+
+}
+
+
+
+@media (min-width:@desktop)  {
+	.process{
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 0 100px 65px 100px;
+		justify-content: flex-end;
+	}
+
+	.process__title{
+		width: 368px;
+		padding: 100px 60px 25px 80px;
+		order: 2;
+		font-size: 20px;
+		line-height: 24px;
+		}
+
+	.process__video{
+		order: 1;
+		width: 682px;
+		background-image: url(../../images/video-desktop.jpg);
+	}
+
+	.process__wrapper{
+		z-index: 2;
+		width: 368px;
+		order: 3;
+		margin-top: -240px;
+		padding: 0 60px 60px 80px;
+		font-size: 15px;
+		line-height: 30px;
 	}
 }

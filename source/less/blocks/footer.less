@@ -1,3 +1,42 @@
 .footer{
 	background-color: #f1f1f1;
+	padding: 0 30px;
+
+}
+
+.footer__logo{
+	display: none;
+
+	&:hover,
+	&:focus{
+		fill: #63d1bb;
+	}
+
+	&:active{
+		opacity: 0.3;
+	}
+}
+
+@media (min-width:@tablet)  {
+	.footer{
+		display: flex;
+		justify-content: space-between;
+		padding: 0 50px;
+		height: 143px;
+		margin-top: -51px;
+	}
+
+	.footer__logo{
+		display: block;
+		display: flex;
+		align-items: center;
+	}
+}
+
+
+
+@media (min-width:@desktop)  {
+	.footer{
+		padding: 0 100px;
+	}
 }

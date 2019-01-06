@@ -1,6 +1,7 @@
 .search{
-	fill:rgba(0, 0, 0, 0.2);
 	border-bottom: 1px solid #ececec;
+	padding: 27px 30px 27px 30px;
+	fill:rgba(0, 0, 0, 0.2);
 
 	&:hover,
 	&:focus{
@@ -24,6 +25,25 @@
 		color: #000;
 	}
 }
+
+@media (min-width:@tablet)  {
+	.search{
+		border: 1px solid #ececec;
+		border-left: none;
+		padding: 27px 33px 27px 33px;
+	}
+
+	.search__input{
+		position: absolute;
+		opacity: 0;
+		z-index: 0;
+	}
+}
+
+@media (min-width:@desktop)  {
+
+}
+
 
 
 

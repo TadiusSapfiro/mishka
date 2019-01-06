@@ -1,6 +1,11 @@
 .email{
+	padding: 15px 0;
+	padding-bottom: 15px;
+	display: flex;
+	flex-direction: column;
 	border: none;
 	border-top: 1px solid #62d1ba;
+	background-color: #f1f1f1;
 }
 
 .email__title{
@@ -16,6 +21,35 @@
 	font-weight: 700;
 }
 
-.info__info{
-	border:2px solid #444;
+@media (min-width:@tablet)  {
+	.email{
+		position: relative;
+		border: none;
+		padding: 20px 0px 50px 165px;
+		flex-wrap: wrap;
+		background-color: #f1f1f1;
+	}
+
+	.email__title{
+		position: absolute;
+		top: 75px;
+		left: 0px;
+	}
+
+	.email__label{
+		display: flex;
+		font-size: 19px;
+		margin-bottom: 30px;
+		margin-top: 10px;
+	}
 }
+
+
+
+@media (min-width:@desktop)  {
+	.email{
+		padding-left:175px;
+		padding-right: 175px;
+	}
+}
+

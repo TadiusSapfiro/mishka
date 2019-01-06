@@ -1,17 +1,27 @@
 .about-us{
+	padding: 35px 30px 60px 30px;
+	background-color: #fff;
 	color: #000;
 }
 
 .about-us__title{
+	margin: 0;
+	padding: 0;
 	font-size: 25px;
 	line-height: 30px;
 	font-weight: 700;	
+}
+
+.about-us__list{
+	margin: 0;
+	padding: 0;
 }
 
 .about-us__item{
 	font-size: 17px;
 	line-height: 20px;
 	font-weight: 700;
+	margin-top: 50px;
 
 	&--flower:before{
 		content: "";
@@ -72,5 +82,33 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		background-image: url(../../images/SVG/icon-feature-gift.svg);		
+	}
+}
+
+@media (min-width:@tablet)  {
+	.about-us{
+		padding: 65px 50px 80px 50px;
+	}
+
+	.about-us__title{
+		font-size: 43px;
+		line-height: 50px;
+	}
+
+	.about-us__list{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.about-us__item{
+		width: 50%;
+		padding-right: 50px;
+		margin-top: 85px;
+	}
+}
+
+@media (min-width:@desktop)  {
+	.about-us{
+		padding: 75px 275px 90px 275px;
 	}
 }

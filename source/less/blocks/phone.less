@@ -1,6 +1,12 @@
 .phone{
+
+	padding: 15px 0;
+	padding-bottom: 15px;
+	display: flex;
+	flex-direction: column;
 	border: none;
 	border-top: 1px solid #62d1ba;
+	background-color: #fff;
 }
 
 .phone__title{
@@ -14,4 +20,36 @@
 	font-size: 17px;
 	line-height: 18px;
 	font-weight: 700;
+}
+
+@media (min-width:@tablet)  {
+	.phone{
+		position: relative;
+		border: none;
+		padding: 50px 0px 0px 165px;
+		flex-wrap: wrap;
+		background-color: #f1f1f1;
+	}
+
+	.phone__title{
+		position: absolute;
+		top: 75px;
+		left: 0px;
+	}
+
+	.phone__label{
+		display: flex;
+		font-size: 19px;
+		margin-bottom: 30px;
+		margin-top: 10px;
+	}
+}
+
+
+
+@media (min-width:@desktop)  {
+	.phone{
+		padding-left:175px;
+		padding-right: 175px;
+	}
 }

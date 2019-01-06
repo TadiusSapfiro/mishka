@@ -1,5 +1,16 @@
 .social{
 	border-bottom: 1px solid #e5e5e5;
+	align-self: center;
+
+}
+
+.social__list{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 55px;
+	height: 80px;
 }
 
 .social__link{
@@ -13,4 +24,22 @@
 	&:active{
 		opacity: 0.3;
 	}
+}
+
+@media (min-width:@tablet)  {
+	.social{
+		width: 145px;
+		border: none;
+	}
+
+	.social__list{
+		padding: 0;
+		height: 80px;
+	}
+}
+
+
+
+@media (min-width:@desktop)  {
+
 }

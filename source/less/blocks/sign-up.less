@@ -1,16 +1,10 @@
 .sign-up{
-
-}
-
-.sign-up__title{
-	background-color: #f1f1f1;
-	font-size: 27px;
-	line-height: 30px;
-	font-weight: 700;
-	color: #231f20;
+	background-color: #fff;
+	padding: 30px 30px 60px 30px;
 }
 
 .sign-up__description{
+	margin: 0;
 	font-size: 13px;
 	line-height: 24px;
 	color: #444;
@@ -20,4 +14,47 @@
 	font-size: 14px;
 	line-height: 16px;
 	color: #444;
+}
+
+.sign-up__btn{
+	margin-top: 30px;
+	padding: 13px 0;
+	width: 100%;
+}
+
+@media (min-width:@tablet)  {
+	.sign-up{
+		padding: 90px 50px 60px 50px;
+	}
+
+	.sign-up__description{
+		font-size: 17px;
+		line-height: 30px;
+	}
+
+	.sign-up__btn{
+		width: 230px;
+		margin-top: 0;
+	}
+
+	.sign-up__disclamer{
+		margin: 0;
+		font-size: 17px;
+		line-height: 30px;
+	}
+
+	.sign-up__btn-wrapper{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+	}
+}
+
+
+
+@media (min-width:@desktop)  {
+	.sign-up__btn-wrapper{
+		padding-left: 175px;
+		padding-right: 175px;
+	}
 }

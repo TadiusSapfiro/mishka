@@ -1,7 +1,19 @@
 .developers{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 35px;
+	height: 80px;
+	align-items: center;
+	align-self: center;
+
 	&:hover .developers__link,
 	&:focus .developers__link{
 		fill: #63d1bb;
+	}
+
+	&:hover .developers__title,
+	&:focus .developers__title{
+		opacity: 0.6;
 	}
 
 	&:active{
@@ -11,6 +23,7 @@
 }
 
 .developers__title{
+	margin: 0;
 	font-size: 19px;
 	line-height: 18px;
 	font-weight: 700;
@@ -20,13 +33,17 @@
 .developers__link{
 	font-size: 0px;
 	fill: #46c1ae;
+}
 
-	// &:hover,
-	// &:focus{
-	// 	fill: #63d1bb;
-	// }
+@media (min-width:@tablet)  {
+	.developers{
+		width: 190px;
+		padding: 0;
+	}
+}
 
-	// &:active{
-	// 	fill: #bde3dd;
-	// }
+
+
+@media (min-width:@desktop)  {
+
 }
