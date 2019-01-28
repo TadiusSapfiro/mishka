@@ -1,6 +1,7 @@
 .cart{
+	position: relative;
 	border-bottom: 1px solid #ececec;
-	padding: 27px 30px 27px 30px;
+	padding: 27px 30px 27px 75px;
 	fill:rgba(0, 0, 0, 0.2);
 	font-size: 17px;
 	line-height: 24px;
@@ -18,13 +19,19 @@
 	}
 }
 
+.cart__icon{
+	top:30px;
+	left:30px;
+	position: absolute;
+}
+
 @media (min-width:@tablet)  {
 	.cart{
 		width: 313px;
 		border: 1px solid #ececec;
 		border-left: none;
 		border-right: none;
-		padding: 27px 50px 27px 50px;
+		padding: 27px 30px 27px 80px;
 	}
 }
 

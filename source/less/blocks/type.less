@@ -1,13 +1,21 @@
 .type{
 	border: none;
 	border-top: 1px solid #62d1ba;
-	padding: 40px 0;
-	padding-top: 15px;
+	padding: 51px 30px;
+	padding-top: 0px;
 	display: flex;
 	flex-direction: column;
 }
 
 .type__title{
+	position: relative;
+	top: -10px;
+	left: -30px;
+	margin-right: auto;
+	padding: 0 30px;
+	text-transform: uppercase;
+	background-color: #fff;
+	
 	font-size: 17px;
 	line-height: 16px;
 	font-weight: 700;
@@ -20,12 +28,12 @@
 
 	&:before{
 		left: 0px;
-		top:-10px;
+		top:-7px;
 	}
 
 	&:after{
 		left: 11px;
-		top:1px;
+		top:4px;
 	}
 
 
@@ -38,19 +46,30 @@
 	.type{
 		position: relative;
 		border: none;
-		padding: 50px 0px 0px 165px;
+		padding: 18px 50px 37px 215px;
 	}
 
 	.type__title{
 		position: absolute;
-		top: 75px;
-		left: 0px;
+		background-color: transparent;
+		top: 45px;
+		left: 20px;
 	}
 
 	.type__label{
 		padding-left: 80px;
-		margin-bottom: 50px;
+		margin-bottom: 32px;
 		font-size: 19px;
+
+		&:before{
+			left: 4px;
+			top:-15px;
+		}
+
+		&:after{
+			left: 19px;
+			top:0px;
+		}
 		
 	}
 }
@@ -59,6 +78,10 @@
 
 @media (min-width:@desktop)  {
 	.type{
-		padding-left:175px;
+		padding: 18px 185px 35px 275px;
+	}
+
+	.type__title{
+		left: 130px;
 	}
 }

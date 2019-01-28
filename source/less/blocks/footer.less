@@ -1,11 +1,17 @@
 .footer{
 	background-color: #f1f1f1;
-	padding: 0 30px;
+	position: relative;
+	z-index: 5;
+}
 
+.footer__wrapper{
+	
+	padding: 0 30px;
 }
 
 .footer__logo{
 	display: none;
+	transition: 0.2s;
 
 	&:hover,
 	&:focus{
@@ -19,6 +25,10 @@
 
 @media (min-width:@tablet)  {
 	.footer{
+		
+	}
+
+	.footer__wrapper{
 		display: flex;
 		justify-content: space-between;
 		padding: 0 50px;
@@ -37,6 +47,10 @@
 
 @media (min-width:@desktop)  {
 	.footer{
+		
+	}
+
+	.footer__wrapper{
 		padding: 0 100px;
 	}
 }

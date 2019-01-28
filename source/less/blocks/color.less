@@ -1,14 +1,25 @@
 .color{
-	background-color: #f1f1f1;
+	background-color: #fff;
+
+}
+
+.color__wrapper{
 	border: none;
 	border-top: 1px solid #62d1ba;
 	display: flex;
 	flex-direction: column;
-	padding: 40px 0;
-	padding-top: 1px
+	padding: 51px 30px;
+	padding-top: 26px
 }
 
 .color__title{
+	position: relative;
+	top: -35px;
+	left: -30px;
+	margin-right: auto;
+	padding: 0 30px;
+	text-transform: uppercase;
+	background-color: #fff;
 	font-size: 17px;
 	line-height: 16px;
 	font-weight: 700;
@@ -17,7 +28,15 @@
 
 .color__label{
 	padding-left: 60px;
-	margin-top: 40px;
+	margin-top: 43px;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: 700;
+	transition: 0.2s;
+
+	&:nth-of-type(1){
+		margin-top: 0px;
+	}
 
 	&:before{
 		left: 0px;
@@ -28,33 +47,38 @@
 		left: 11px;
 		top:1px;
 	}
-
-	font-size: 17px;
-	line-height: 18px;
-	font-weight: 700;
 }
 
 @media (min-width:@tablet)  {
 	.color{
+		background-color: #f1f1f1;
+	}
+
+	.color__wrapper{
 		position: relative;
 		border: none;
-		padding: 50px 0px 0px 165px;
+		padding: 51px 50px 28px 215px;
 		flex-wrap: wrap;
 		flex-direction: row;
 	}
 
 	.color__title{
+		background-color: transparent;
 		position: absolute;
-		top: 75px;
-		left: 0px;
+		top: 65px;
+		left: 20px;
 	}
 
 	.color__label{
 		padding-left: 80px;
 		width: 50%;
 		font-size: 19px;
-		margin-bottom: 50px;
-		margin-top: 10px;
+		margin-bottom: 44px;
+		margin-top: 13px;
+
+		&:nth-of-type(1){
+			margin-top: 13px;
+		}
 	}
 }
 
@@ -62,7 +86,15 @@
 
 @media (min-width:@desktop)  {
 	.color{
-		padding-left:175px;
+		
+	}
+
+	.color__wrapper{
+		padding: 51px 185px 27px 275px;
+	}
+
+	.color__title{
+		left: 130px;
 	}
 
 	.color__label{

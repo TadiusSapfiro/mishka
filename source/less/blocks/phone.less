@@ -1,15 +1,24 @@
 .phone{
+	background-color: #fff;
+}
 
-	padding: 15px 0;
-	padding-bottom: 15px;
+.phone__wrapper{
+	padding: 13px 30px;
+	padding-bottom: 40px;
 	display: flex;
 	flex-direction: column;
 	border: none;
 	border-top: 1px solid #62d1ba;
-	background-color: #fff;
 }
 
 .phone__title{
+	position: relative;
+	top: -23px;
+	left: -30px;
+	margin-right: auto;
+	padding: 0 30px;
+	text-transform: uppercase;
+	background-color: #fff;
 	font-size: 17px;
 	line-height: 16px;
 	font-weight: 700;
@@ -24,17 +33,21 @@
 
 @media (min-width:@tablet)  {
 	.phone{
-		position: relative;
-		border: none;
-		padding: 50px 0px 0px 165px;
-		flex-wrap: wrap;
 		background-color: #f1f1f1;
 	}
 
+	.phone__wrapper{
+		position: relative;
+		border: none;
+		padding: 65px 50px 0px 215px;
+		flex-wrap: wrap;
+	}
+
 	.phone__title{
+		background-color: transparent;
 		position: absolute;
-		top: 75px;
-		left: 0px;
+		top: 65px;
+		left: 20px;
 	}
 
 	.phone__label{
@@ -49,7 +62,13 @@
 
 @media (min-width:@desktop)  {
 	.phone{
-		padding-left:175px;
-		padding-right: 175px;
+	}
+
+	.phone__wrapper{
+		padding: 65px 275px 0px 275px;
+	}
+
+	.phone__title{
+		left: 130px;
 	}
 }

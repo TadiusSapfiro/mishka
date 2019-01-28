@@ -1,14 +1,23 @@
 .email{
-	padding: 15px 0;
-	padding-bottom: 15px;
+}
+
+.email__wrapper{
+	padding: 13px 30px;
+	padding-bottom: 40px;
 	display: flex;
 	flex-direction: column;
 	border: none;
 	border-top: 1px solid #62d1ba;
-	background-color: #f1f1f1;
 }
 
 .email__title{
+	position: relative;
+	top: -23px;
+	left: -30px;
+	margin-right: auto;
+	padding: 0 30px;
+	text-transform: uppercase;
+	background-color: #fff;
 	font-size: 17px;
 	line-height: 16px;
 	font-weight: 700;
@@ -23,17 +32,21 @@
 
 @media (min-width:@tablet)  {
 	.email{
+		background-color: #f1f1f1;
+	}
+
+	.email__wrapper{
 		position: relative;
 		border: none;
-		padding: 20px 0px 50px 165px;
+		padding: 39px 50px 50px 215px;
 		flex-wrap: wrap;
-		background-color: #f1f1f1;
 	}
 
 	.email__title{
 		position: absolute;
-		top: 75px;
-		left: 0px;
+		top: 40px;
+		left: 20px;
+		background-color: transparent;
 	}
 
 	.email__label{
@@ -48,8 +61,14 @@
 
 @media (min-width:@desktop)  {
 	.email{
-		padding-left:175px;
-		padding-right: 175px;
+	}
+
+	.email__wrapper{
+		padding: 39px 275px 50px 275px;
+	}
+
+	.email__title{
+		left: 130px;
 	}
 }
 

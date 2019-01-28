@@ -1,6 +1,6 @@
 .info{
-	padding: 30px 0;
-	padding-bottom: 15px;
+	padding: 16px 30px;
+	padding-bottom: 3px;
 	display: flex;
 	flex-direction: column;
 	border: none;
@@ -8,6 +8,13 @@
 }
 
 .info__title{
+	position: relative;
+	top: -25px;
+	left: -30px;
+	margin-right: auto;
+	padding: 0 30px;
+	text-transform: uppercase;
+	background-color: #fff;
 	font-size: 17px;
 	line-height: 16px;
 	font-weight: 700;
@@ -22,8 +29,8 @@
 
 .info__info{
 	padding: 15px;
-	width: 260px;
-	height: 140px;
+	width: 100%;
+	height: 142px;
 	border:2px solid #444;
 	resize: none;
 	outline: none;
@@ -71,7 +78,7 @@
 	.info{
 		position: relative;
 		border: none;
-		padding: 50px 0px 0px 165px;
+		padding: 40px 50px 23px 215px;
 		flex-wrap: wrap;
 	}
 
@@ -94,7 +101,10 @@
 
 @media (min-width:@desktop)  {
 	.info{
-		padding-left:175px;
-		padding-right: 175px;
+		padding: 40px 275px 23px 275px;
+	}
+
+	.info__title{
+		left: 130px;
 	}
 }

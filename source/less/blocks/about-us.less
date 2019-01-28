@@ -1,5 +1,5 @@
 .about-us{
-	padding: 35px 30px 60px 30px;
+	padding: 28px 30px 52px 30px;
 	background-color: #fff;
 	color: #000;
 }
@@ -18,76 +18,67 @@
 }
 
 .about-us__item{
+	position: relative;
 	font-size: 17px;
 	line-height: 20px;
 	font-weight: 700;
-	margin-top: 50px;
+	margin-top: 84px;
 
-	&--flower:before{
+	&:before{
 		content: "";
+		position: absolute;
+		top:-50px;
 		display: block;
-		width: 32px;
-		height: 38px;
 		background-repeat: no-repeat;
 		background-position: center;
-		background-image: url(../../images/SVG/icon-feature-flower.svg);
+	}
+
+	&--flower:before{
+		left: 11px;
+		width: 32px;
+		height: 38px;
+		background-image: url(../images/SVG/icon-feature-flower.svg);
 	}
 
 	&--money:before{
-		content: "";
-		display: block;
+		left: 4px;
 		width: 47px;
 		height: 27px;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-image: url(../../images/SVG/icon-feature-money.svg);		
+		background-image: url(../images/SVG/icon-feature-money.svg);		
 	}
 
 	&--heart:before{
-		content: "";
-		display: block;
+		left: 11px;
 		width: 33px;
 		height: 27px;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-image: url(../../images/SVG/icon-feature-heart.svg);
+		background-image: url(../images/SVG/icon-feature-heart.svg);
 	}
 
 	&--ball:before{
-		content: "";
-		display: block;
+		left: 10px;
 		width: 34px;
 		height: 34px;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-image: url(../../images/SVG/icon-feature-ball.svg);
+		background-image: url(../images/SVG/icon-feature-ball.svg);
 
 	}
 
 	&--rocket:before{
-		content: "";
-		display: block;
 		width: 55px;
 		height: 24px;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-image: url(../../images/SVG/icon-feature-rocket.svg);		
+		background-image: url(../images/SVG/icon-feature-rocket.svg);		
 	}
 
 	&--gift:before{
-		content: "";
-		display: block;
+		left: 11px;
 		width: 33px;
 		height: 33px;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-image: url(../../images/SVG/icon-feature-gift.svg);		
+		background-image: url(../images/SVG/icon-feature-gift.svg);		
 	}
 }
 
 @media (min-width:@tablet)  {
 	.about-us{
-		padding: 65px 50px 80px 50px;
+		padding: 60px 50px 87px 50px;
 	}
 
 	.about-us__title{
@@ -102,13 +93,20 @@
 
 	.about-us__item{
 		width: 50%;
-		padding-right: 50px;
-		margin-top: 85px;
+		padding-right: 30px;
+		margin-top: 107px;
+		font-size: 20px;
+		line-height: 22px;
 	}
 }
 
 @media (min-width:@desktop)  {
 	.about-us{
-		padding: 75px 275px 90px 275px;
+		padding: 60px 275px 90px 275px;
+	}
+
+	.about-us__title{
+		font-size: 53px;
+		line-height: 57px;
 	}
 }

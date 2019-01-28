@@ -1,40 +1,87 @@
+.main-nav{
+	position: relative;
+}
+
 .main-nav__logo{
+	position: relative;
 	height: 80px;
 	border-bottom: 1px solid #ececec;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: 0.2s;
 
-	&:hover,
-	&:focus{
+	&:hover .main-nav__logo-link,
+	&:focus .main-nav__logo-link{
 		opacity: 0.6;
 	}
 
-	&:active{
+	&:active .main-nav__logo-link{
 		opacity: 0.3;
 	}
+
 }
 
 .main-nav__toggle{
 	position: absolute;
+	z-index: 2;
+	right: 28px;
 	width: 30px;
 	height: 30px;
 	border: none;
+	font-size: 0px;
+	cursor: pointer;
 	background-color: transparent;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url(../../images/SVG/icon-menu-open.svg);
-	font-size: 0px;
+	transition: 0.2s;
 
-	&--close{
-		background-repeat: no-repeat;
-		background-position: center;
-		background-image: url(../../images/SVG/icon-menu-close.svg);
+	&:hover ,
+	&:focus{
+		opacity: 0.6;
+		transform: scale(1.2);
+	}
+
+	&:active{
+		opacity: 0.3;
+		transform: scale(0.9);
 	}
 }
 
+
+
 .main-nav__wrapper{
 	border-bottom: 1px solid #ececec;
+}
+
+@media (max-width:767px)  {
+
+	.main-nav--opened .main-nav__toggle{
+		background-image: url(../images/SVG/icon-menu-close.svg);
+	}
+
+	.main-nav--closed .main-nav__toggle{
+		background-image: url(../images/SVG/icon-menu-open.svg);
+	}
+
+	.main-nav--closed .site-nav,
+	.main-nav--closed .shop-info,
+	.main-nav--closed .search,
+	.main-nav--closed .cart{
+		display: none;
+	}
+	
+	.main-nav--nojs .main-nav__toggle{
+		display: none;
+	}
+
+	.main-nav--nojs .site-nav,
+	.main-nav--nojs .shop-info,
+	.main-nav--nojs .search,
+	.main-nav--nojs .cart{
+		display: block;
+	}
+
 }
 
 @media (min-width:@tablet)  {
@@ -47,6 +94,9 @@
 	.main-nav__logo{
 		order: 1;
 		border: 1px solid #ececec;
+		border-right: none;
+		border-left: none;
+		height: 89px;
 		width: 370px;
 		justify-content: flex-start;
 		padding: 0 50px;
@@ -81,9 +131,10 @@
 
 	.main-nav__logo{
 		order: 2;
-		width: 320px;
+		width: 292px;
 		justify-content: center;
 		border-left: none;
+		padding-left: 0px;
 		
 	}
 

@@ -1,6 +1,7 @@
 .radio__label{
 	position: relative;
 	cursor: pointer;
+	transition: 0.2s;
 
 	&:before{
 		content: "";
@@ -33,6 +34,7 @@
 }
 
 .radio__control{
+	transition: 0.2s;
 	
 	&:checked + .radio__label:after{
 		display: inline-block;
@@ -55,8 +57,3 @@
 	}	
 }
 
-
-
-@media (min-width:@desktop)  {
-	
-}

@@ -1,10 +1,11 @@
 .sign-up{
 	background-color: #fff;
-	padding: 30px 30px 60px 30px;
+	padding: 23px 0px 60px 0px;
 }
 
 .sign-up__description{
-	margin: 0;
+	padding: 0 30px;
+	margin-bottom: 32px;
 	font-size: 13px;
 	line-height: 24px;
 	color: #444;
@@ -16,18 +17,23 @@
 	color: #444;
 }
 
+.sign-up__btn-wrapper{
+	padding: 0 30px;
+}
+
 .sign-up__btn{
 	margin-top: 30px;
-	padding: 13px 0;
+	padding: 14px 0;
 	width: 100%;
 }
 
 @media (min-width:@tablet)  {
 	.sign-up{
-		padding: 90px 50px 60px 50px;
+		padding: 60px 0px 0px 0px;
 	}
 
 	.sign-up__description{
+		padding: 0 50px;
 		font-size: 17px;
 		line-height: 30px;
 	}
@@ -44,6 +50,8 @@
 	}
 
 	.sign-up__btn-wrapper{
+		padding: 0 50px;
+		padding-bottom: 50px;
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: space-between;
@@ -53,8 +61,19 @@
 
 
 @media (min-width:@desktop)  {
+
+	.sign-up{
+		padding: 103px 0px 0px 0px;
+	}
+
 	.sign-up__btn-wrapper{
-		padding-left: 175px;
-		padding-right: 175px;
+		padding-left: 275px;
+		padding-right: 275px;
+		padding-bottom: 46px
+	}
+
+	.sign-up__description{
+		padding-left: 275px;
+		padding-right: 275px;
 	}
 }
