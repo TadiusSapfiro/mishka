@@ -88,6 +88,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .button:hover,
 .button:focus {
@@ -99,6 +101,8 @@ a {
 }
 .button--blue-ghost {
   border-color: #ececec;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .button--blue-ghost:hover,
 .button--blue-ghost:focus {
@@ -115,6 +119,8 @@ a {
   background-color: #63d1bb;
   color: #fff;
   border-color: #63d1bb;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .button--blue:hover,
 .button--blue:focus {
@@ -188,6 +194,8 @@ a {
   height: 39px;
   border: 2px solid #444;
   background-color: transparent;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .checkbox-label:hover:before {
   border-color: #62d1ba;
@@ -749,6 +757,7 @@ a {
   background-image: url(../images/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: 320px 373px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .main {
@@ -768,6 +777,7 @@ a {
     position: relative;
     margin-top: -51px;
     background-image: url(../images/hero-tablet.jpg);
+    background-size: 768px 746px;
   }
   .main__title {
     font-size: 43px;
@@ -777,13 +787,14 @@ a {
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .main {
-    background-image: url(../images/hero-tablet.jpg);
+    background-image: url(../images/hero-tablet2x.jpg);
   }
 }
 @media (min-width: 1250px) {
   .main {
     background-image: url(../images/hero-desktop.jpg);
     margin-top: -51px;
+    background-size: 1250px 746px;
   }
   .main__title {
     font-size: 53px;
@@ -1570,7 +1581,6 @@ a {
     margin-top: -51px;
   }
   .footer__logo {
-    display: block;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1931,6 +1941,8 @@ a {
 .type__label {
   padding-left: 60px;
   margin-top: 25px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -2313,6 +2325,8 @@ a {
   resize: none;
   outline: none;
   cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .info__info:hover {
   border-color: #63d1bb;
@@ -2644,6 +2658,7 @@ a {
   height: 150px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 260px 150px;
   background-image: url(../images/video-mobile.jpg);
   cursor: pointer;
   -webkit-transition: 0.2s;
@@ -2722,6 +2737,7 @@ a {
     width: 668px;
     height: 455px;
     background-image: url(../images/video-tablet.jpg);
+    background-size: 668px 455px;
   }
   .process__wrapper {
     -webkit-box-ordinal-group: 4;
@@ -2773,6 +2789,7 @@ a {
         -ms-flex-order: 1;
             order: 1;
     width: 682px;
+    background-size: 682px 455px;
     background-image: url(../images/video-desktop.jpg);
   }
   .process__wrapper {
