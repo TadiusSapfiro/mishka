@@ -7,6 +7,7 @@
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.1.x",
     "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^5.0.3",
@@ -15,8 +16,10 @@
     "gulp-postcss": "8.0.x",
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.4.0",
+    "gulp-svgmin": "^2.1.0",
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
+    "imagemin-svgo": "^7.0.0",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.6.x",
     "stylelint-config-htmlacademy": "0.1.x"
@@ -48,8 +51,5 @@
   "engines": {
     "node": "8.12"
   },
-  "dependencies": {
-    "gulp-svgmin": "^2.1.0",
-    "imagemin-svgo": "^7.0.0"
-  }
+  "dependencies": {}
 }
